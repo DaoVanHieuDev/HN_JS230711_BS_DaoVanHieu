@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="divHackathon">
+        <div class="container">
+            <form action="">
+                <div class="wrapper_student">
+                    <h1> thông tin học viên </h1>
+                    <div class="form-group">
+                        <label for="name">Họ Và Tên</label>
+                        <input type="text" value="" id="name" placeholder=" Vui lòng Nhập Tên"> <br>
+                        <p class="error1"> </p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" value="" id="email" placeholder=" Vui lòng Nhập Email"> <br>
+                        <p class="error2"> </p>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Số điện thoại </label>
+                        <input type="tel" value="" id="phone" placeholder=" Vui lòng Nhập Số Điện Thoại">
+                         <br> 
+                        <p class="error3"> </p>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Địa chỉ</label>
+                        <input type="text" value="" id="address" placeholder=" Vui lòng Nhập Địa Chi"> <br>
+                        <p class="error4"> </p>
+
+                    </div>
+                    <div class="form-group-radio">
+                        <label for=""> Giới tính</label>
+                        <div class="content_radio">
+                            <div class="item">
+                                <input type="radio" id="nam" value="Nam" name="sex" class="sex_choose" checked>
+                                <label for="nam">Nam</label>
+                            </div>
+                            <div class="item">
+                                <input type="radio" id="nu" value="Nữ" name="sex" class="sex_choose">
+                                <label for="nu">Nữ</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <button class="btn btn-primary save_data" type="button"> Lưu lại </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="table_list">
+            <div class="header">
+                <h2 class="list_header"> Danh sách học viên</h2>
+                <div class="search_and_sort">
+                    <div class="search">
+                        <label for="">Tìm kiếm học viên :</label>
+                        <input type="text" value="" class="searchValue">
+                        <button class="btn btn-primary btn_search"> Search </button>
+                    </div>
+
+                    <div class="sort">
+                        <button class="btn btn-danger sort_name">Sort name Eng</button>
+                    </div>
+                </div>
+            </div>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th> #</th>
+                        <th> Họ Tên</th>
+                        <th> Email</th>
+                        <th> Số Điện Thoại</th>
+                        <th> Địa chỉ</th>
+                        <th> Gender </th>
+                        <th> Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
